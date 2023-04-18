@@ -7,6 +7,7 @@ class SobreMim extends Desenvolvedor {
   trabalho  = 'for now looking...';
   local = 'RS';
 }
+
 class Skills extends Desenvolvedor {
   frontEnd = {
     tecnologias: ['HTML', 'CSS', 'JavaScript'],
@@ -16,12 +17,12 @@ class Skills extends Desenvolvedor {
   };
 
   backEnd = {
-    linguagens: ['JavaScript', 'Java'],
+    linguagens: ['JavaScript', 'Java', 'PHP'],
     frameworks: ['Node.js', 'Express'],
     bancosDeDados: ['MySQL', 'MongoDB', 'PostgreSQL']
   };
 
-  outras = ['Git', 'Linux',];
+  outrasHabilidades = ['Git', 'Linux',];
   
   metodologias = ['Scrum', 'Kanban'];
 }
