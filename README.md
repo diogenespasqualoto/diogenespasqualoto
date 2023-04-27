@@ -1,17 +1,16 @@
-```java
 import Desenvolvedor from 'Goddi';
 
 class SobreMim extends Desenvolvedor {
-  nome     = 'Diógenes da Silva Pasqualoto';
-  area    = 'TI';
-  trabalho  = 'for now looking...';
+  nome = 'Diógenes da Silva Pasqualoto';
+  area = 'TI';
+  trabalho = 'for now looking...';
   local = 'RS';
 }
 
 class Skills extends Desenvolvedor {
   frontEnd = {
-    tecnologias: ['HTML', 'CSS', 'JavaScript'],
-    frameworks: ['Vue.js', ],
+    linguagens: ['HTML', 'CSS', 'JavaScript'],
+    frameworks: ['Vue.js'],
     bibliotecas: ['jQuery', 'Bootstrap'],
     ferramentas: ['Webpack', 'Gulp']
   };
@@ -22,8 +21,7 @@ class Skills extends Desenvolvedor {
     bancosDeDados: ['MySQL', 'MongoDB', 'PostgreSQL']
   };
 
-  outrasHabilidades = ['Git', 'Linux',];
-  
+  outrasHabilidades = ['Git', 'Linux'];
+
   metodologias = ['Scrum', 'Kanban'];
 }
-```
