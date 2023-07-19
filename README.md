@@ -1,29 +1,42 @@
-```java
-import Desenvolvedor from 'Goddi';
+function Desenvolvedor() {}
 
+// SobreMim.js
 class SobreMim extends Desenvolvedor {
-  nome = 'Diógenes da Silva Pasqualoto';
-  area = 'TI';
-  trabalho = 'for now looking...';
-  local = 'RS';
+  constructor() {
+    super();
+    this.nome = 'Diógenes da Silva Pasqualoto';
+    this.area = 'TI';
+    this.trabalho = 'for now looking...';
+    this.local = 'RS';
+  }
 }
 
+// Skills.js
 class Skills extends Desenvolvedor {
-  frontEnd = {
-    linguagens: ['HTML', 'CSS', 'JavaScript'],
-    frameworks: ['Vue.js'],
-    bibliotecas: ['jQuery', 'Bootstrap'],
-    ferramentas: ['Webpack', 'Gulp']
-  };
+  constructor() {
+    super();
+    this.frontEnd = {
+      linguagens: ['HTML', 'CSS', 'JavaScript'],
+      frameworks: ['Vue.js'],
+      bibliotecas: ['jQuery', 'Bootstrap'],
+      ferramentas: ['Webpack', 'Gulp']
+    };
 
-  backEnd = {
-    linguagens: ['JavaScript', 'Java', 'PHP'],
-    frameworks: ['Node.js', 'Express'],
-    bancosDeDados: ['MySQL', 'MongoDB', 'PostgreSQL']
-  };
+    this.backEnd = {
+      linguagens: ['JavaScript', 'Java', 'PHP'],
+      frameworks: ['Node.js', 'Express'],
+      bancosDeDados: ['MySQL', 'MongoDB', 'PostgreSQL']
+    };
 
-  outrasHabilidades = ['Git', 'Linux'];
+    this.outrasHabilidades = ['Git', 'Linux'];
 
-  metodologias = ['Scrum', 'Kanban'];
+    this.metodologias = ['Scrum', 'Kanban'];
+  }
 }
-```
+
+// Exemplo:
+const sobreMim = new SobreMim();
+console.log(sobreMim);
+
+const skills = new Skills();
+console.log(skills);
