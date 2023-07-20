@@ -36,7 +36,7 @@ class Skills extends Desenvolvedor {
   }
 }
 
-// Exemplo de uso:
+// Exemplo:
 const sobreMim = new SobreMim();
 console.log(sobreMim);
 
