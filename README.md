@@ -1,46 +1,63 @@
-```js
-// Desenvolvedor.js
-function Desenvolvedor() {}
+```ruby
 
-// SobreMim.js
-class SobreMim extends Desenvolvedor {
-  constructor() {
-    super();
-    this.nome = 'Diógenes da Silva Pasqualoto';
-    this.area = 'TI';
-    this.trabalho = 'for now looking...';
-    this.local = 'RS';
-  }
-}
+class Desenvolvedor
+  attr_accessor :nome, :area, :trabalho, :local
 
-// Skills.js
-class Skills extends Desenvolvedor {
-  constructor() {
-    super();
-    this.frontEnd = {
+  def initialize(nome, area, trabalho, local)
+    @nome = nome
+    @area = area
+    @trabalho = trabalho
+    @local = local
+  end
+end
+
+class SobreMim < Desenvolvedor
+  def initialize
+    super('Diógenes da Silva Pasqualoto', 'TI', 'for now looking...', 'RS')
+  end
+
+  def to_s
+    "Nome: #{@nome}\nÁrea: #{@area}\nTrabalho: #{@trabalho}\nLocal: #{@local}"
+  end
+end
+
+class Skills < Desenvolvedor
+  def initialize
+    super('Diógenes da Silva Pasqualoto', 'TI', 'for now looking...', 'RS')
+
+    @front_end = {
       linguagens: ['HTML', 'CSS', 'JavaScript'],
       frameworks: ['Vue.js'],
       bibliotecas: ['jQuery', 'Bootstrap'],
       ferramentas: ['Webpack', 'Gulp']
-    };
+    }
 
-    this.backEnd = {
+    @back_end = {
       linguagens: ['JavaScript', 'Java', 'PHP'],
       frameworks: ['Node.js', 'Express'],
-      bancosDeDados: ['MySQL', 'MongoDB', 'PostgreSQL']
-    };
+      bancos_de_dados: ['MySQL', 'MongoDB', 'PostgreSQL']
+    }
 
-    this.outrasHabilidades = ['Git', 'Linux'];
+    @outras_habilidades = ['Git', 'Linux']
 
-    this.metodologias = ['Scrum', 'Kanban'];
-  }
-}
+    @metodologias = ['Scrum', 'Kanban']
+  end
 
-// Exemplo:
-const sobreMim = new SobreMim();
-console.log(sobreMim);
+  def to_s
+    skills = "Front-End:\n  Linguagens: #{@front_end[:linguagens]}\n  Frameworks: #{@front_end[:frameworks]}\n  Bibliotecas: #{@front_end[:bibliotecas]}\n  Ferramentas: #{@front_end[:ferramentas]}"
+    skills += "\nBack-End:\n  Linguagens: #{@back_end[:linguagens]}\n  Frameworks: #{@back_end[:frameworks]}\n  Bancos de Dados: #{@back_end[:bancos_de_dados]}"
+    skills += "\nOutras Habilidades:\n  #{@outras_habilidades}"
+    skills += "\nMetodologias:\n  #{@metodologias}"
 
-const skills = new Skills();
-console.log(skills);
+    super + "\n#{skills}"
+  end
+end
+
+sobre_mim = SobreMim.new
+puts sobre_mim
+
+skills = Skills.new
+puts skills
+
 
 ```
