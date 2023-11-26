@@ -33,9 +33,9 @@ class Skills < Desenvolvedor
     }
 
     @back_end = {
-      linguagens: ['JavaScript', 'Java', 'PHP'],
-      frameworks: ['Node.js', 'Express'],
-      bancos_de_dados: ['MySQL', 'MongoDB', 'PostgreSQL']
+      linguagens: ['JavaScript', 'Ruby'],
+      frameworks: ['Node.js', 'Express', Rails],
+      bancos_de_dados: ['SQLITE', 'MySQL', 'MongoDB', 'PostgreSQL']
     }
 
     @outras_habilidades = ['Git', 'Linux']
