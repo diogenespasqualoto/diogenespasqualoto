@@ -1,4 +1,3 @@
-```ruby
 
 class Desenvolvedor
   attr_accessor :nome, :area, :trabalho, :local
@@ -34,7 +33,7 @@ class Skills < Desenvolvedor
 
     @back_end = {
       linguagens: ['JavaScript', 'Ruby'],
-      frameworks: ['Node.js', 'Express', Rails],
+      frameworks: ['Node.js', 'Express', "Rails"],
       bancos_de_dados: ['SQLITE', 'MySQL', 'MongoDB', 'PostgreSQL']
     }
 
@@ -59,5 +58,3 @@ puts sobre_mim
 skills = Skills.new
 puts skills
 
-
-```
