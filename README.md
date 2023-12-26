@@ -1,4 +1,4 @@
-
+```
 class Desenvolvedor
   attr_accessor :nome, :area, :trabalho, :local
 
@@ -58,3 +58,4 @@ puts sobre_mim
 skills = Skills.new
 puts skills
 
+```
