@@ -1,4 +1,4 @@
-```
+```ruby
 class Desenvolvedor
   attr_accessor :nome, :area, :trabalho, :local
 
